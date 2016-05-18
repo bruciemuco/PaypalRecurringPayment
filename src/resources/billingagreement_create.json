@@ -1,0 +1,18 @@
+{
+    "name": "T-Shirt of the Month Club Agreement",
+    "description": "Agreement for T-Shirt of the Month Club Plan",
+    "start_date": "2016-12-12T00:37:04Z",
+    "plan": {
+        "id": "P-0J154525WH002435TUVYQOKY"
+    },
+    "payer": {
+        "payment_method": "paypal"
+    },
+    "shipping_address": {
+        "line1": "111 First Street",
+        "city": "Saratoga",
+        "state": "CA",
+        "postal_code": "95070",
+        "country_code": "US"
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Shoe of the month club",
+  "description": "This is a demo being created.",
+  "type": "fixed",
+  "payment_definitions": [
+    {
+      "name": "Regular Payments",
+      "type": "REGULAR",
+      "frequency_interval": "2",
+      "frequency": "MONTH",
+      "cycles": "12",
+      "amount": {
+        "currency": "USD",
+        "value": "100"
+      },
+      "charge_models": [
+        {
+          "type": "SHIPPING",
+          "amount": {
+            "currency": "USD",
+            "value": "10"
+          }
+        },
+        {
+          "type": "TAX",
+          "amount": {
+            "currency": "USD",
+            "value": "20"
+          }
+        }
+      ]
+    }
+  ],
+  "merchant_preferences": {
+    "setup_fee": {
+      "currency": "USD",
+      "value": "1"
+    },
+    "cancel_url": "http://localhost:8080/Paypal/recurringpay",
+    "return_url": "http://localhost:8080/Paypal/recurringpay",
+    "max_fail_attempts": "0",
+    "auto_bill_amount": "YES",
+    "initial_fail_amount_action": "CONTINUE"
+  }
+}
